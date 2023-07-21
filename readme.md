@@ -23,7 +23,6 @@ In conclusion, "Rock, Paper, Scissors" is more than just a game—it's a practic
 -------------------
 
 Before you write any code, you should "sketch" the pseudo code and make a flowchart for how you plan to do the following alterations to the game.
-Absolutely. Here's a revised set of requirements without pair programming and arranged in a more logical sequence.
 
 Module Requirements:
 

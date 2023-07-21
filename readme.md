@@ -23,19 +23,49 @@ In conclusion, "Rock, Paper, Scissors" is more than just a game—it's a practic
 -------------------
 
 Before you write any code, you should "sketch" the pseudo code and make a flowchart for how you plan to do the following alterations to the game.
+Absolutely. Here's a revised set of requirements without pair programming and arranged in a more logical sequence.
 
-- Extend the game into "Rock Paper Scissors Spock Lizard"
-- Add a start screen (i.e. don't go directly to play), the user should push a button to start play.
-- Do the necessary changes to support multiple languages.
-- After a game, go back to the start screen, where the user can choose to play again or exit.
+Module Requirements:
 
-If you want a challenge (higher grade), try doing these things also:
+1. **Implement a Start Screen**
+   - Create a basic start screen with an option to start the game. The game should not start until the user chooses to do so.
 
-- On the startup screen give 4 choices 1p, 2p(hot-seat), change language, exit
-- Do the necessary changes to support 2p hot-seat play.
-- Do the necessary changes to change language from the menu
-- Add a splash screen.
-- Use ansi escape codes to add color ([Ansi text colors](https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html#colors))
+2. **Implement a Game Replay Option**
+   - After a game concludes, navigate back to the start screen. The user should have the option to play again or exit the game. Test the functionality to ensure it works as expected.
+
+3. **Extend the Game to "Rock Paper Scissors Spock Lizard"**
+   - Begin by coding the logic for a "Rock Paper Scissors" game. After ensuring that this base game functions correctly, extend it to "Rock Paper Scissors Spock", and finally to "Rock Paper Scissors Spock Lizard".
+   - Use debugging tools to identify and correct any errors in your game logic.
+
+4. **Support Multiple Languages**
+   - Modify your game to support an additional language. Once you have successfully implemented dual-language support, expand your game to support multiple languages.
+   - Use debugging tools to identify and correct any errors that arise in the language implementation.
+
+5. **Refactor Your Code**
+   - After implementing all the above features, review your code for potential improvements. Your goal is to make your code more efficient, readable, and maintainable. It is a god idea to document your refactoring decisions and the reasons behind them in the readme file.
+
+Challenge Requirements (Higher Grades):
+
+1. **Implement a More Detailed Start Screen**
+   - Enhance your start screen to offer more choices: Single player, Two-player (hot-seat), Change language, and Exit.
+   - Use debugging tools to ensure that all menu options function as expected.
+
+2. **Support Two-Player Hot-Seat Play**
+   - Modify your game to support a two-player mode, where two players can play on the same machine, taking turns ("hot-seat").
+   - Use debugging tools to ensure that this mode functions correctly.
+
+3. **Implement a Splash Screen**
+   - Add a splash screen that appears before the start screen.
+   - Use debugging tools to make sure the splash screen displays and transitions correctly.
+
+4. **Add ANSI Escape Codes to Add Color**
+   - Enhance your game's user interface by using ANSI escape codes to add color.
+   - Use debugging tools to make sure your color implementation works correctly.
+
+5. **Propose and Implement a Custom Feature**
+   - Come up with a custom feature that will enhance the game, then implement it. Submit a brief document explaining your feature, why you chose it, and any challenges you encountered while implementing it. 
+
+Throughout this module, students should keep in mind that the ultimate goal is not only to build these features but also to learn from the process. They should aim to understand how different parts of a program interact, how to troubleshoot effectively, and how to write clean, effective code.
 
 Evryone: In your README file, include a section where you highlight potential challenges or limitations in your code. Reflect on what could be done differently, and areas you believe could be improved.
 

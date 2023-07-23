@@ -20,11 +20,11 @@ npcChoice = MakeNPCChoice(choices);
 while (choices.ContainsKey(playerChoice) == false)
 {
     Console.WriteLine($"Choose your weapon: {CombineChoices(choices, ", ")}");
-    playerChoice = Console.ReadLine().ToUpper();
+    playerChoice = (Console.ReadLine() ?? "").ToUpper();
 }
 // summarize the game and declare the winner 
 Console.WriteLine($"You chose {choices[playerChoice]} and the NPC chose {choices[npcChoice]}.");
-Console.WriteLine(WhoWon(playerChoice, npcChoice));
+Console.WriteLine(DetermineWinner(playerChoice, npcChoice));
 
 // Functions -------------------------------------------------------
 
@@ -36,7 +36,7 @@ static string MakeNPCChoice(Hashtable choices)
     return choices.Keys.OfType<string>().ElementAt(choiceIndex);
 }
 
-static string WhoWon(string playerChoice, string npcChoice)
+static string DetermineWinner(string playerChoice, string npcChoice)
 {
     if (playerChoice == npcChoice)
     {
@@ -46,10 +46,9 @@ static string WhoWon(string playerChoice, string npcChoice)
     {
         return "You win!";
     }
-    else
-    {
-        return "You lose!";
-    }
+
+    return "You lose!";
+
 }
 
 static string CombineChoices(Hashtable choices, string separator)

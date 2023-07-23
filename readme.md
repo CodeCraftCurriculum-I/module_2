@@ -71,7 +71,7 @@ Evryone: In your README file, include a section where you highlight potential ch
 All your code and related files should be neatly organized in a Zip file, with the following internal structure
 
     module_2_rps
-    ├── Program.cs
+    ├── RPS.cs
     ├── module_2_rps.csproj
     ├── module_2_rps.sln
     └── readme.md

@@ -74,7 +74,8 @@ All your code and related files should be neatly organized in a Zip file, with t
     ├── RPS.cs
     ├── module_2_rps.csproj
     ├── module_2_rps.sln
-    └── readme.md
+    ├── readme.md
+    └── *.*
 
 **About assesment:**
 -------------------
